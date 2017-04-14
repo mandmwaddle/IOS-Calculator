@@ -21,6 +21,20 @@
 			remoteGlobalIDString = 3F9696E21B3455A200CDD77A;
 			remoteInfo = "Simple Universal Webview App";
 		};
+		889E5C7B1EA10B43002DC299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889E5C761EA10B42002DC299 /* Calculator Stickers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 889E5C621EA10B41002DC299;
+			remoteInfo = "Calculator Stickers";
+		};
+		889E5C7D1EA10B43002DC299 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889E5C761EA10B42002DC299 /* Calculator Stickers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 889E5C661EA10B42002DC299;
+			remoteInfo = StickerPackExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +46,7 @@
 		3F9696EF1B3455A200CDD77A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F9696F81B3455A200CDD77A /* Simple Universal Webview AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Universal Webview AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9696FD1B3455A200CDD77A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889E5C761EA10B42002DC299 /* Calculator Stickers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Calculator Stickers.xcodeproj"; path = "Calculator Stickers/Calculator Stickers.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +88,7 @@
 		3F9696E51B3455A200CDD77A /* Simple Universal Webview App */ = {
 			isa = PBXGroup;
 			children = (
+				889E5C761EA10B42002DC299 /* Calculator Stickers.xcodeproj */,
 				3F9696E81B3455A200CDD77A /* AppDelegate.swift */,
 				3F9696EA1B3455A200CDD77A /* ViewController.swift */,
 				3F9696EC1B3455A200CDD77A /* Main.storyboard */,
@@ -104,6 +120,15 @@
 				3F9696FD1B3455A200CDD77A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		889E5C771EA10B42002DC299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				889E5C7C1EA10B43002DC299 /* Calculator Stickers.app */,
+				889E5C7E1EA10B43002DC299 /* StickerPackExtension.appex */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +175,9 @@
 		3F9696DB1B3455A200CDD77A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Freeman Industries";
 				TargetAttributes = {
@@ -175,6 +203,12 @@
 			mainGroup = 3F9696DA1B3455A200CDD77A;
 			productRefGroup = 3F9696E41B3455A200CDD77A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 889E5C771EA10B42002DC299 /* Products */;
+					ProjectRef = 889E5C761EA10B42002DC299 /* Calculator Stickers.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3F9696E21B3455A200CDD77A /* Simple Universal Webview App */,
@@ -182,6 +216,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		889E5C7C1EA10B43002DC299 /* Calculator Stickers.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Calculator Stickers.app";
+			remoteRef = 889E5C7B1EA10B43002DC299 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889E5C7E1EA10B43002DC299 /* StickerPackExtension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = StickerPackExtension.appex;
+			remoteRef = 889E5C7D1EA10B43002DC299 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3F9696E11B3455A200CDD77A /* Resources */ = {
@@ -280,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
